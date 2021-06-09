@@ -42,7 +42,7 @@
        security_groups: "{{ SECURITY_GROUP }}"
        auto_ip: yes
        region_name: RegionOne
-       wait: yes
+       wait: false
        
 
 
