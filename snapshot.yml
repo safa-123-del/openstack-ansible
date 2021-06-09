@@ -14,11 +14,11 @@
     PS1: '[\u@\h \W(keystone_admin)]\$'
 #vars project
     OS_PROJECT_NAME: "admin"
-    OS_PROJECT: "safa"
+    OS_PROJECT: "{{ project | default(None) }}"
     OS_DNS_NAMESERVER1: "8.8.8.8"
 #vars snapshot
-    NAME_SNAPSHOT: "snapshot1"
-    NAME_VOLUME: "volume1"
+    NAME_SNAPSHOT: "{{ snapshot | default(None) }}"
+    NAME_VOLUME: "{{ volume | default(None) }}"
   tasks:
 
     - name : create a volume
