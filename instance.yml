@@ -13,14 +13,14 @@
     OS_PROJECT_DOMAIN_NAME: "Default"
     PS1: '[\u@\h \W(keystone_admin)]\$'
     OS_PROJECT_NAME: "admin"
-    OS_PROJECT: "ABCD"
+    OS_PROJECT: "{{ project | default(None) }}"
 #vars instance
-    NAME_INSTANCE: "instanceABCD"
-    NAME_INT_NETWORK: "interne_network"
+    NAME_INSTANCE: "{{ name | default(None) }}"
+    NAME_INT_NETWORK: "{{ int_network| default(None) }}"
 #    NAME_IMAGE: "centos7"
     NAME_IMAGE: "cirross"
-    SECURITY_GROUP: "groupABCD"
-    KEY_NAME: ansible_key
+    SECURITY_GROUP: "{{ sc_grp | default(None) }}"
+    KEY_NAME: "{{ key | default(None) }}"
     NAME_FLAVOR: "m1.tiny"
   tasks:
 
