@@ -18,6 +18,7 @@
     NAME_ROUTER: "{{ router | default(None) }}"
     NAME_EXT_NETWORK: "{{ ext_network | default(None) }}"
     NAME_EXT_SUBNET: "{{ ext_subnet | default(None) }}"
+    NAME_INT_NETWORK: "{{ int_network | default(None) }}"
     NAME_INT_SUBNET: "{{ int_subnet | default(None) }}"
   tasks:
     - debug: var=ansible_host
