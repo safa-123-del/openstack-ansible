@@ -15,7 +15,7 @@
     OS_PROJECT_NAME: "ABCD"
     OS_PROJECT: "ABCD"
 #vars ip floating 
-    NAME_INSTANCE: "instance ABCD"
+    NAME_INSTANCE: "instanceABCD"
     NAME_EXT_NETWORK: "ABCD_ext_net"
   tasks:
     - name: create a floating_ip
