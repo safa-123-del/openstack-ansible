@@ -12,7 +12,7 @@
     OS_USER_DOMAIN_NAME: "Default"
     OS_PROJECT_DOMAIN_NAME: "Default"
     PS1: '[\u@\h \W(keystone_admin)]\$'
-    OS_PROJECT_NAME: "admin"
+    OS_PROJECT_NAME: "ABCD"
     OS_PROJECT: "ABCD"
 #vars ip floating 
     NAME_INSTANCE: "instance ABCD"
@@ -25,7 +25,7 @@
          auth_url: "{{ OS_AUTH_URL }}"
          username: "{{ OS_USERNAME }}"
          password: "{{ OS_PASSWORD }}"
-         project_name: "{{ OS_PROJECT }}"
+         project_name: "{{ OS_PROJECT_NAME }}"
          os_user_domain_name: "{{ OS_USER_DOMAIN_NAME }}"
          os_project_domain_name: "{{ OS_PROJECT_DOMAIN_NAME }}"
        reuse: yes
