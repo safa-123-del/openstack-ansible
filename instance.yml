@@ -38,11 +38,12 @@
        image: "{{ NAME_IMAGE }}"
        key_name: "{{ KEY_NAME }}"
        flavor: "{{ NAME_FLAVOR }}"
+       timeout: 200
        network: "{{ NAME_INT_NETWORK }}"
        security_groups: "{{ SECURITY_GROUP }}"
        auto_ip: yes
        region_name: RegionOne
-       timeout: 200
+       
 
 
 
