@@ -30,5 +30,5 @@
          os_project_domain_name: "{{ OS_PROJECT_DOMAIN_NAME }}"
        reuse: yes
        server: "{{ NAME_INSTANCE }}"
-       network: "{{ NAME_EXT_NERWORK }}"
+       network: "{{ NAME_EXT_NETWORK }}"
     
