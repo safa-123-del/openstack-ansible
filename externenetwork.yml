@@ -21,8 +21,8 @@
     DNS_NAMESERVERS: "8.8.8.8"
     ALLOCATION_POOL_START: "{{ pool_start | default(None) }}"
     ALLOCATION_POOL_END: "{{ pool_end | default(None) }}"
-    tasks:
-    - debug: var=ansible_host
+  tasks:
+
     - name : create an externe network
       os_network:
         state: present
@@ -36,6 +36,7 @@
         name: "{{ NAME_EXT_NETWORK }}"
         external: true
         shared: yes
+
     - name: create an externe subnet
       os_subnet:
         state: present
