@@ -15,7 +15,7 @@
     OS_PROJECT_NAME: "admin"
     OS_PROJECT: "{{ project | default(None) }}"
 #vars security_group
-    SECURITY_GROUP: "{{ sec_group | default(None) }}"
+    SECURITY_GROUP: "{{ security_group | default(None) }}"
     PROTOCOL: "tcp"
   tasks:
     - debug: var=ansible_host  
