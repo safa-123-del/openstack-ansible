@@ -19,7 +19,7 @@
     NAME_INT_NETWORK: "{{ int_network| default(None) }}"
 #    NAME_IMAGE: "centos7"
     NAME_IMAGE: "cirross"
-    SECURITY_GROUP: "{{ sec_grp | default(None) }}"
+    SECURITY_GROUP: "{{ sec_group | default(None) }}"
     KEY_NAME: "{{ key | default(None) }}"
     NAME_FLAVOR: "m1.tiny"
   tasks:
