@@ -5,8 +5,8 @@
   vars:
 #vars auth openstack
     ANSIBLE_PYTHON_INTERPRETER: "/usr/bin/python3.6"
-    OS_USERNAME: "{{ os_username | default(None) }}"
-    OS_PASSWORD: "{{ os_password | default(None) }}"
+    OS_USERNAME: "{{ member | default(None) }}"
+    OS_PASSWORD: "{{ password | default(None) }}"
     OS_REGION_NAME: "RegionOne"
     OS_AUTH_URL: "http://172.25.52.127:5000/v3"
     OS_USER_DOMAIN_NAME: "Default"
