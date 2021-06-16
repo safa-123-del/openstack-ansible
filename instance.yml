@@ -22,6 +22,7 @@
     SECURITY_GROUP: "{{ sec_group | default(None) }}"
     KEY_NAME: "{{ key | default(None) }}"
     NAME_FLAVOR: "m1.tiny"
+    NAME_VOLUME: "{{ volume | default(None) }}"
   tasks:
 
     - name: create a new instance
@@ -43,6 +44,7 @@
        auto_ip: yes
        region_name: RegionOne
        wait: false
+       volumes: "{{ NAME_VOLUME }}"
        
 
 
