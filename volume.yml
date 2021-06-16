@@ -16,7 +16,6 @@
     OS_PROJECT_NAME: "admin"
     OS_PROJECT: "{{ project | default(None) }}"
     OS_DNS_NAMESERVER1: "8.8.8.8"
-    NAME_INSTANCE: "{{ name | default(None) }}"
 #vars volume
     NAME_VOLUME: "{{ volume | default(None) }}"
     SIZE_VOLUME: "{{ size | default(None) }}"
@@ -34,5 +33,5 @@
           os_project_domain_name: "{{ OS_PROJECT_DOMAIN_NAME }}"
         display_name: "{{ NAME_VOLUME }}"
         size: "{{ SIZE_VOLUME }}"
-        server: "{{ NAME_INSTANCE }}"
+        
 
