@@ -34,5 +34,5 @@
           os_project_domain_name: "{{ OS_PROJECT_DOMAIN_NAME }}"
         display_name: "{{ NAME_VOLUME }}"
         size: "{{ SIZE_VOLUME }}"
-        server: "{{ name }}"
+        server: "{{ NAME_INSTANCE }}"
 
